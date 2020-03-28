@@ -114,7 +114,7 @@ header.masthead .bg-circle-4 {
   right: 35%;
 }
 
-@media (min-width: 992px) {
+/*@media (min-width: 992px) {
   header.masthead {
     padding-top: calc(10rem + 55px);
     padding-bottom: 10rem;
@@ -124,6 +124,20 @@ header.masthead .bg-circle-4 {
   }
   header.masthead .masthead-content .masthead-subheading {
     font-size: 4rem;
+  }
+}*/
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+  div.example {
+    font-size: 80px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  div.example {
+    font-size: 5px;
   }
 }
 
